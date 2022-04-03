@@ -6,18 +6,55 @@
   --white-color: #ffffff;
   --grey-color: #757575;
   --background-color: #2f303a;
-  --footer-color: rgba(255, 255, 255, 0.6);
+  --second-background-color: #F5F4FA;
+  --foot-color: rgba(255, 255, 255, 0.6);
   --button-background-color: #f5f4fa;
-  --button-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.3);
+  --button-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
   --white-border-color: #eeeeee;
 }
 body {
   font-family: var(--main-font);
   color: var(--main-color);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+.container {
+  width: 1200px;
+  }
 
 /*=====HEADER=====*/
 
+.head {
+  display: flex;
+  align-items: center;
+  margin-left:auto;
+}
+.logo {
+  margin-right: 93px;  
+ }
 .logo-black {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -28,13 +65,23 @@ body {
   color: var(--main-color);
 }
 .logo-blue {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 2.583;
+  letter-spacing: 0.03em;
+  text-decoration: none;
   color: var(--secondary-color);
 }
 .navigation-list {
   list-style-type: none;
   text-decoration: none;
+  display: flex;
 }
-.navigation-list-item {
+.navigation-list .navigation-list-item:not(:last-child) {
+  margin-right: 46px;
+}
+.navigation-list-item-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.333;
@@ -42,13 +89,19 @@ body {
   text-decoration: none;
   color: var(--main-color);
 }
-.navigation-list-item:hover,
-.navigation-list-item:focus,
-.navigation-list-item:active {
+.navigation-list-item-link:hover,
+.navigation-list-item-link:focus,
+.navigation-list-item-link:active {
   color: var(--secondary-color);
-  text-decoration: none;
 }
-.header-mail {
+.head-adress{
+  display: flex;
+  padding-left: 371px;
+  }
+.head-adress .head-adress-link:not(:last-child) {
+  margin-right: 50px;
+}
+.head-adress-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.333;
@@ -56,40 +109,35 @@ body {
   text-decoration: none;
   color: var(--grey-color);
 }
-.header-mail:hover,
-.header-mail:focus,
-.header-mail:active {
-  color: var(--secondary-color);
-}
-.header-phone-number {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.333;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--grey-color);
-}
-.header-phone-number:hover,
-.header-phone-number:focus,
-.header-phone-number:active {
+.head-adress-link:hover,
+.head-adress-link:focus,
+.head-adress-link:active {
   color: var(--secondary-color);
 }
 
 /*=====section:EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU=======*/
 
-.main-title {
+.hero {
   background-color: var(--background-color);
+  align-items: center;
 }
-.title {
+.hero-list {
+  list-style-type: none;
+  text-decoration: none;
+}
+.hero-list-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-decoration: none;
   color: var(--white-color);
+  max-width: 696px;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  padding-left: 451px;
 }
-.main-button {
+.hero-list-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 2.5;
@@ -99,32 +147,76 @@ body {
   background-color: var(--secondary-color);
   border-radius: 4px;
   cursor: pointer;
-}
+  padding: 20px, 700px,200px;
+  }
 
 /*======division:paragraphs=======*/
 
+.paragraphs {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 215px;
+  align-items: center;
+}
 .paragraphs-list {
   list-style-type: none;
+  text-decoration: none;
+  display: flex;
 }
-.paragraph-title {
+.paragraphs-list .paragraphs-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.paragraphs-list-item-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
-.paragraph-content {
+.paragraphs-list-item-content {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey-color);
 }
+/*======section:Czym się zajmujemy=======*/
+
+
+.about-us-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  list-style-type: none;
+  text-decoration: none;
+  align-items: center;
+  padding-bottom:  50px;
+  padding-left: 624px;
+}
+.about-us-list {
+  display: flex;
+  list-style-type: none;
+  padding-bottom: 94px;
+  padding-left: 215px;
+  }
+.about-us-list .about-us-list-item:not(:last-child) {
+  margin-right: 30px;
+  }
+
+/*======section: Nasz zespół=======*/
+
+.team {
+  background-color: var(--second-background-color);
+  align-items: center;
+  display: flex;
+  
+}
 .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-}
-.about-us-list {
   list-style-type: none;
+  text-decoration: none;
+  padding-top: 90px;
+  padding-left: 696px;
 }
 .team-list {
   list-style-type: none;
@@ -144,9 +236,12 @@ body {
 
 /*=======footer=====================*/
 
-.footer {
+.foot {
   background-color: var(--background-color);
   font-style: normal;
+}
+.logo-foot{
+  padding-left: 215px;
 }
 .logo-white {
   font-family: var(--secondary-font);
@@ -157,10 +252,12 @@ body {
   text-decoration: none;
   color: var(--white-color);
 }
-.footer-list {
+.foot-list {
   list-style-type: none;
+  padding-top: 20px;
+  padding-left: 215px;
 }
-.footer-adress {
+.foot-adress {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.333;
@@ -169,37 +266,37 @@ body {
   font-style: normal;
   color: var(--white-color);
 }
-.footer-adress:hover,
-.footer-adress:focus,
-.footer-adress:active {
+.foot-adress:hover,
+.foot-adress:focus,
+.foot-adress:active {
   color: var(--secondary-color);
 }
-.footer-mail {
+.foot-mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.333;
   letter-spacing: 0.02em;
   text-decoration: none;
   font-style: normal;
-  color: var(--footer-color);
+  color: var(--foot-color);
 }
-.footer-mail:hover,
-.footer-mail:focus,
-.footer-mail:active {
+.foot-mail:hover,
+.foot-mail:focus,
+.foot-mail:active {
   color: var(--secondary-color);
 }
-.footer-phone-number {
+.foot-phone-number {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.333;
   letter-spacing: 0.02em;
   text-decoration: none;
   font-style: normal;
-  color: var(--footer-color);
+  color: var(--foot-color);
 }
-.footer-phone-number:hover,
-.footer-phone-number:focus,
-.footer-phone-number:active {
+.foot-phone-number:hover,
+.foot-phone-number:focus,
+.foot-phone-number:active {
   color: var(--secondary-color);
 }
 
@@ -216,6 +313,7 @@ body {
   letter-spacing: 0.03em;
   width: auto;
   height: 38px;
+  border-style: none;
   background-color: var(--button-background-color);
   border-radius: 4px;
   cursor: pointer;

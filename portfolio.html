@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Studio</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
 </head>
 <body>
-    <header>
-        <a class="logo-black" href="/index.html"><span class="logo-blue">Web</span>Studio</a>
-        <nav class="navigation">
-            <ul class="navigation-list">
-                <li><a class="navigation-list-item" href="/index.html">Agencja</a></li>
-                <li><a class="navigation-list-item" href="/portfolio.html">Portfolio</a></li>
-                <li><a class="navigation-list-item" href="#">Kontakt</a></li>
-            </ul>
-        </nav>
-        <div class="header-adress">
-            <a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="header-phone-number" href="tel:+48111111111">+48 111 111 111</a>
+    <header class="container">
+        <div class="head">
+            <div class="logo">
+                <a class="logo-black" href="/index.html"><span class="logo-blue">Web</span>Studio</a>
+            </div>
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-list-item"><a class="navigation-list-item-link" href="/index.html">Agencja</a>
+                    </li>
+                    <li class="navigation-list-item"><a class="navigation-list-item-link"
+                            href="/portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="navigation-list-item"><a class="navigation-list-item-link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="head-adress">
+                <a class="head-adress-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="head-adress-link" href="tel:+48111111111">+48 111 111 111</a>
+            </div>
         </div>
     </header>
     <main>
@@ -124,15 +133,19 @@
         </div>
     </main>
 <!--FOOTER-->
-    <footer class="footer">
-        <a class="logo-white" href="/index.html"><span class="logo-blue">Web</span>Studio</a>
-        <address>
-            <ul class="footer-list">
-                <li><a class="footer-adress" href="https://goo.gl/maps/iG8N9iNhBNZRM3RP8">m. Warszawa, Aleje Jerozolimskie 21</a></li>
-                <li><a class="footer-mail" href="mailto:info@example.com">info@example.com</a></li>
-                <li><a class="footer-phone-number" href="tel:+48111111111">+48 111 111 111</a></li>
-            </ul>
-        </address>
+    <footer class="container">
+        <section class="foot">
+            <div class="logo-foot">
+                <a class="logo-white" href="/index.html"><span class="logo-blue">Web</span>Studio</a>
+            </div>
+            <address>
+                <ul class="foot-list">
+                    <li><a class="foot-adress" href="https://goo.gl/maps/iG8N9iNhBNZRM3RP8">m. Warszawa, Aleje Jerozolimskie
+                            21</a></li>
+                    <li><a class="foot-mail" href="mailto:info@example.com">info@example.com</a></li>
+                    <li><a class="foot-phone-number" href="tel:+48111111111">+48 111 111 111</a></li>
+                </ul>
+            </address>
+        </section>
     </footer>
-    </body>
 </html>
