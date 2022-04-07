@@ -378,7 +378,7 @@ img {
   color: var(--secondary-color);
 }
 
-/*=========Portfolio==========*/
+/*=========Portfolio buttons==========*/
 
 .menu-buttons-list {
   list-style: none;
@@ -413,18 +413,21 @@ img {
 .menu-buttons-list:not(:last-child) {
   margin-right: 8px;
 }
+
+/*======divison portfolio====*/
+
+
 .portfolio-list {
   list-style: none;
   font-style: normal;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
+  flex-basis: calc(100%/3 - 10px);
   margin-top: -30px;
+  margin-left: -30px;
  }
 .portfolio-list-item{
-  margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc(100% / 3 - 30px);
 }
 .portfolio-list-item-tab {
   width: 370px;
@@ -432,7 +435,7 @@ img {
   color: var(--main-color);
   border: 1px solid var(--white-border-color);
   box-sizing: border-box;
-}
+ }
 .portfolio-example {
   font-weight: 700;
   font-size: 18px;
