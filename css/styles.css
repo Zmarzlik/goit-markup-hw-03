@@ -95,6 +95,7 @@ img {
   list-style-type: none;
   text-decoration: none;
   display: flex;
+  color: var(--main-color);
   }
 .navigation-list .navigation-list-item:not(:last-child) {
   margin-right: 46px;
