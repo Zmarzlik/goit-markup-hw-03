@@ -89,7 +89,6 @@ img {
 }
 .navigation {
   display: flex;
-
 }
 .navigation-list {
   list-style-type: none;
@@ -105,7 +104,7 @@ img {
   font-size: 14px;
   line-height: 1,142;
   letter-spacing: 0.02em;
-  text-decoration: none;  
+  text-decoration: none;
   color: var(--main-color);
 }
 .navigation-list-item-link:hover,
@@ -426,9 +425,8 @@ img {
   flex-wrap: wrap;
   margin-top: -30px;
   justify-content: space-between;
-
  }
-.portfolio-list .portfolio-list-item{
+.portfolio-list-item{
   margin-top: 30px; 
   flex-basis: calc(100%/3 - 10px);
 }
