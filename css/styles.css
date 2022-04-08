@@ -89,12 +89,12 @@ img {
 }
 .navigation {
   display: flex;
+
 }
 .navigation-list {
   list-style-type: none;
   text-decoration: none;
   display: flex;
-  color: var(--main-color);
   }
 .navigation-list .navigation-list-item:not(:last-child) {
   margin-right: 46px;
@@ -104,7 +104,8 @@ img {
   font-size: 14px;
   line-height: 1,142;
   letter-spacing: 0.02em;
-  text-decoration: none;
+  text-decoration: none;  
+  color: var(--main-color);
 }
 .navigation-list-item-link:hover,
 .navigation-list-item-link:focus,
@@ -423,10 +424,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
-  margin-left: -30px;
   justify-content: space-between;
+
  }
-.portfolio-list-item{
+.portfolio-list .portfolio-list-item{
   margin-top: 30px; 
   flex-basis: calc(100%/3 - 10px);
 }
