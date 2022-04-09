@@ -423,25 +423,38 @@ img {
 /*======divison portfolio====*/
 
 
+
+}
 .portfolio-list {
   list-style: none;
   font-style: normal;
   display: flex;
   flex-wrap: wrap;
-   justify-content: space-between 30px;
-  flex-basis: calc(100%/3 - 10px);
+  justify-content: space-between;
+  padding-top: 0px;
+  margin-bottom: 94px;
+  margin-left: 0px;
  }
 .portfolio-list-item{
-   width: 370px;
+  width: 370px;
   height: 404px;
   color: var(--main-color);
-  border: 1px solid var(--white-border-color);
+  flex-basis: calc(100%/3 - 10px);
+  margin-bottom: 30px;
+ 
+}
+.portfolio-border {
+  border-left: 1px solid var(--white-border-color);
+  border-bottom: 1px solid var(--white-border-color);
+  border-right: 1px solid var(--white-border-color);
+  width: 370px;
 }
 .portfolio-example {
   font-weight: 700;
   font-size: 18px;
   line-height: 2,000;
   letter-spacing: 0.06em;
+  margin: 0;
   padding-top: 20px;
   padding-left: 24px;
 }
@@ -451,6 +464,9 @@ img {
   letter-spacing: 0.03em;
   color: var(--grey-color);
   text-align: left;
-  padding-top: 4px;
+  margin: 0;
+  padding-top: 20px;  
+  padding-bottom: 20px;
   padding-left: 24px;
+ 
 }
