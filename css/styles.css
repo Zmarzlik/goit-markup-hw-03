@@ -180,7 +180,7 @@ img {
 .hero-content-button {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1,181;
+  line-height: 1,185;
   width: 200px;
   height: 50px;
   color: var(--white-color);
@@ -231,7 +231,7 @@ img {
 .about-us-heading-second-level {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.143;
+  line-height: 1.167;
   padding-top: 94px;
   padding-bottom: 50px;
   margin: 0 auto;
@@ -243,7 +243,7 @@ img {
 .about-us-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.167;
   list-style-type: none;
   text-decoration: none;
   align-items: center;
@@ -267,7 +267,7 @@ img {
 .team-heading-second-level {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.143;
+  line-height: 1.167;
   padding-top: 94px;
   padding-bottom: 50px;
   margin: 0 auto;
@@ -458,7 +458,7 @@ margin-right: 15px;
 }
 .portfolio-description {
   font-size: 16px;
-  line-height: 1,875;
+  line-height: 1,666;
   letter-spacing: 0.03em;
   color: var(--grey-color);
   text-align: left;
